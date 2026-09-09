@@ -19,6 +19,12 @@ runnable scripts, while the other files are just function definitions.
 - `check_accepts.jl` is used to ensure that the lazy cached doubling/accept code returns the same result as the original implementations in Neal, "Slice sampling." Annals of Statistics 31, 2003.
 - `plot_*.jl` contains plotting code for all the figures in the preprint.
 
-Note that the code in this repository is released for reproducibility purposes and is not production quality.
+Two important notes:
+
+1. This code is released for reproducibility purposes and is not production quality.
 Some of the `plot_*.jl` scripts in particular may require manual tweaking to produce slightly different 
 versions of results, etc.
+
+2. This code follows the implementations in the above preprint, and so minimizes the number of target evaluations, but otherwise 
+is not particularly carefully engineered, so major efficiency gains could probably be obtained by just following a few
+basic principles [from the Julia docs](https://docs.julialang.org/en/v1/manual/performance-tips/).
