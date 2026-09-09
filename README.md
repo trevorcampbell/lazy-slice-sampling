@@ -8,8 +8,8 @@ This code repository accompanies the preprint
 
 [T. Campbell, "Optimal slice-adaptive tuning of hybrid slice sampling." arXiv:2609.08172.](https://arxiv.org/abs/2609.08172)
 
-To use this code, open a Julia terminal in this repository, and activate the environment / instantiate it if necessary.
-Below is a brief description of all code files. Note that `minimize_w.jl`, `check_accepts.jl`, and all the `plot_*.jl` files are
+Before using this code, open a Julia terminal in this repository, and activate the environment / instantiate it if necessary.
+Below is a brief description of all code files. The `minimize_w.jl`, `check_accepts.jl`, and all `plot_*.jl` files are
 runnable scripts, while the other files are just function definitions.
 
 - `slice_sampling.jl` contains the main implementation of the methods described in the above preprint.
